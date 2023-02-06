@@ -12,6 +12,7 @@ class Data_User_model extends CI_Model
 	{
 		$this->form_validation->set_rules('nama', 'Nama', 'required|trim');
 		$this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|is_unique[tb_user.email]', ['is_unique' => 'Email sudah pernah digunakan!']);
+		$this->form_validation->set_rules('nik', 'NIK', 'required|trim|is_unique[tb_user.nik]', ['is_unique' => 'NIK sudah pernah digunakan!']);
 		$this->form_validation->set_rules('password1', 'Password', 'required|trim|min_length[6]|matches[password2]', ['matches' => 'Password tidak sama', 'min_length' => 'Password terlalu pendek, password minimal 6 karakter!']);
 		$this->form_validation->set_rules('password2', 'Password', 'required|trim|matches[password1]');
 		$this->form_validation->set_rules('role', 'Role Akun', 'trim|required');
@@ -21,6 +22,9 @@ class Data_User_model extends CI_Model
 	{
 		$post = [
 			'nama' => htmlspecialchars($this->input->post('nama', true)),
+			'nik' => htmlspecialchars($this->input->post('nik', true)),
+			'pekerjaan' => htmlspecialchars($this->input->post('pekerjaan', true)),
+			'no_hp' => htmlspecialchars($this->input->post('no_hp', true)),
 			'email' => htmlspecialchars($this->input->post('email', true)),
 			'password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
 			'role' => htmlspecialchars($this->input->post('role', true)),
@@ -42,6 +46,7 @@ class Data_User_model extends CI_Model
 		$nik = $this->input->post('nik');
 		$email = $this->input->post('email');
 		$pekerjaan = $this->input->post('pekerjaan');
+		$no_hp = $this->input->post('no_hp');
 		$role = $this->input->post('role');
 		$is_active = $this->input->post('is_active');
 
@@ -50,6 +55,7 @@ class Data_User_model extends CI_Model
 		$this->db->set('email', $email);
 		$this->db->set('role', $role);
 		$this->db->set('pekerjaan', $pekerjaan);
+		$this->db->set('no_hp', $no_hp);
 		$this->db->set('is_active', $is_active);
 		$this->db->where('id', $id);
 		$this->db->update('tb_user');

@@ -32,7 +32,7 @@ class kkpr_NonBerusaha extends CI_Controller
 		$data['title'] = 'Pengajuan KKPR NonBerusaha';
 		$data['user'] = $this->db->get_where('tb_user', ['email' => $this->session->userdata('email')])->row_array();
 
-		$this->KPPR_NonBerusaha_model->simpan();
+		$this->kkpr_NonBerusaha_model->simpan();
 
 		$this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Berhasil mengajukan permohonan! anda dapat memeriksa status pendaftaran anda pada <b>Status Pengajuan</b> diatas!</div>');
 		redirect('perizinan/KKPR_NonBerusaha');

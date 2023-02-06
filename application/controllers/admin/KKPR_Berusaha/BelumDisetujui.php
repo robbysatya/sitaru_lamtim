@@ -34,6 +34,8 @@ class BelumDisetujui extends CI_Controller
 	{
 		$data['title'] = 'Detail Data KKPR Berusaha Belum Disetujui';
 		$data['kkpr_belum'] = $this->db->get_where('tb_kkpr_berusaha', ['status' => 'Tunggu'])->result_array();
+		$data['user_name'] = $this->db->get_where('tb_user', ['email' => $this->session->userdata('email')])->result_array();
+		$data['user'] = $this->db->get_where('tb_user', ['email' => $this->session->userdata('email')])->row_array();
 
 		$this->load->view('templates/admin_header', $data);
 		$this->load->view('templates/admin_sidebar');

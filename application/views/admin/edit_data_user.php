@@ -58,6 +58,18 @@
                     <?= form_error('nama', '<small class="text-danger pl-3">', '</small>'); ?>
                   </div>
                   <div class="mb-3">
+                    <label for="">Pekerjaan</label>
+                    <input type="text" class="form-control" id="pekerjaan" name="pekerjaan" placeholder="Pekerjaan"
+                      value="<?= set_value('pekerjaan'); ?>">
+                    <?= form_error('pekerjaan', '<small class="text-danger pl-3">', '</small>'); ?>
+                  </div>
+                  <div class="mb-3">
+                    <label for="">No HP</label>
+                    <input type="text" class="form-control" id="no_hp" name="no_hp" placeholder="No HP"
+                      value="<?= set_value('no_hp'); ?>">
+                    <?= form_error('no_hp', '<small class="text-danger pl-3">', '</small>'); ?>
+                  </div>
+                  <div class="mb-3">
                     <label for="">Email</label>
                     <input type="email" class="form-control" id="email" name="email" placeholder="Email"
                       value="<?= $user_recent['email']; ?>">
@@ -103,8 +115,9 @@
           </div>
 
 
-      
-  </div>
+
+
+        </div>
       </div>
       <!-- /.container-fluid -->
   </div>

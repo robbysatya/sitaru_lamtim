@@ -230,4 +230,9 @@ class kkpr_NonBerusaha_model extends CI_Model
 		$this->db->where('nik', $nik);
 		$this->db->delete('tb_kkpr_nonberusaha');
 	}
+
+	public function getNik(Type $var = null)
+	{
+		return $this->db->query("SELECT nik FROM tb_user");
+	}
 }

@@ -40,4 +40,28 @@ class Disetujui extends CI_Controller
 		$this->load->view('admin/detail_kkpr_nonberusaha_v');
 		$this->load->view('templates/admin_footer');
 	}
+
+	public function surat_perizinan()
+	{
+		$this->data['data_surat'] = $this->db->get_where('tb_kkpr_nonberusaha', ['status' => 'Disetujui'])->result_array();;
+
+		// panggil library yang kita buat sebelumnya yang bernama pdfgenerator
+		$this->load->library('pdfgenerator');
+
+		// title dari pdf
+		$this->data['title_pdf'] = 'Surat Perizinan KKPR Non Berusaha';
+
+		// filename dari pdf ketika didownload
+		$file_pdf = 'surat_perizinan_nonberusaha';
+
+		// setting paper
+		$paper = 'A4';
+		//orientasi paper potrait / landscape
+		$orientation = "portrait";
+
+		$html = $this->load->view('admin/surat_perizinan_pdf', $this->data, true);
+
+		// run dompdf
+		$this->pdfgenerator->generate($html, $file_pdf, $paper, $orientation);
+	}
 }

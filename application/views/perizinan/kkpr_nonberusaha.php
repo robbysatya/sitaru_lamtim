@@ -96,40 +96,41 @@
                   <h2 class="py-4">Lokasi Kegiatan</h2>
                   <div class="form-group">
                     <label for="exampleInputAlamatKegiatan"><span class="text-danger">*</span> Alamat Kegiatan</label>
-                    <textarea type="text" name="alamat_kegiatan" class="form-control" id="alamat_kegiatan"
+                    <textarea required type="text" name="alamat_kegiatan" class="form-control" id="alamat_kegiatan"
                       placeholder="Jl. Nama Jalan"></textarea>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputKecamatan"><span class="text-danger">*</span> Kecamatan</label>
-                    <select data-placeholder="Pilih Kecamatan" class="form-control kecamatan" name="kecamatan">
+                    <select required data-placeholder="Pilih Kecamatan" class="form-control kecamatan" name="kecamatan">
                     </select>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputKelurahan"><span class="text-danger">*</span> Desa/Kelurahan</label>
-                    <select data-placeholder="Pilih Desa/Kelurahan" class="form-control kelurahan" name="kelurahan">
+                    <select required data-placeholder="Pilih Desa/Kelurahan" class="form-control kelurahan"
+                      name="kelurahan">
                     </select>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputLatittude"><span class="text-danger">*</span> Latittude & Longitude</label>
-                    <input type="text" name="latittude_longitude" class="form-control" id="latittude_longitude"
+                    <input required type="text" name="latittude_longitude" class="form-control" id="latittude_longitude"
                       placeholder="Latittude & Longitude"></input>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputLuasTanahDimohon"><span class="text-danger">*</span> Luas Tanah Dimohon
                       <span class="text-danger">m<sup>2</sup></span></label>
-                    <input type="text" name="luas_tanah_dimohon" class="form-control" id="luas_tanah_dimohon"
+                    <input required type="text" name="luas_tanah_dimohon" class="form-control" id="luas_tanah_dimohon"
                       placeholder="Luas Tanah Dimohon"></input>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputLuasTanahSesuaiBukti"><span class="text-danger">*</span> Luas Sesuai Bukti
                       Kepemilikan Tanah <span class="text-danger">m<sup>2</sup></span></label>
-                    <input type="text" name="luas_tanah_sesuai_bukti" class="form-control" id="luas_tanah_sesuai_bukti"
-                      placeholder="Luas Sesuai Bukti Kepemilikan Tanah"></input>
+                    <input required type="text" name="luas_tanah_sesuai_bukti" class="form-control"
+                      id="luas_tanah_sesuai_bukti" placeholder="Luas Sesuai Bukti Kepemilikan Tanah"></input>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputLuasBangunan"><span class="text-danger">*</span> Luas Bangunan <span
                         class="text-danger">m<sup>2</sup></span></label>
-                    <input type="text" name="luas_bangunan" class="form-control" id="luas_bangunan"
+                    <input required type="text" name="luas_bangunan" class="form-control" id="luas_bangunan"
                       placeholder="Luas Bangunan"></input>
                   </div>
 
@@ -138,7 +139,8 @@
                   <h2 class="py-4">Status Tanah</h2>
                   <div class="form-group">
                     <label for="exampleInputStatusTanah"><span class="text-danger">*</span> Status Tanah</label>
-                    <select data-placeholder="Status Tanah" class="form-control" name="status_tanah" id="status_tanah">
+                    <select required data-placeholder="Status Tanah" class="form-control" name="status_tanah"
+                      id="status_tanah">
                       <option>Pilih Status Tanah</option>
                       <option value="SHM">SHM</option>
                       <option value="SHGU">SHGU</option>
@@ -153,28 +155,28 @@
                   <div class="form-group">
                     <label for="exampleInputPenggunaanTanahSekarang"><span class="text-danger">*</span> Penggunaan Tanah
                       Sekarang</label>
-                    <textarea type="text" name="penggunaan_tanah_sekarang" class="form-control"
+                    <textarea required type="text" name="penggunaan_tanah_sekarang" class="form-control"
                       id="penggunaan_tanah_sekarang" placeholder="Penggunaan Tanah Sekarang"></textarea>
                   </div>
 
                   <div class="form-group">
                     <label for="exampleInputRencanaJumlahLantai"><span class="text-danger">*</span> Rencana Jumlah
                       Lantai</label>
-                    <input type="number" name="rencana_jumlah_lantai" class="form-control" id="rencana_jumlah_lantai"
-                      placeholder="Rencana Jumlah Lantai"></input>
+                    <input required type="number" name="rencana_jumlah_lantai" class="form-control"
+                      id="rencana_jumlah_lantai" placeholder="Rencana Jumlah Lantai"></input>
                   </div>
 
                   <div class="form-group">
                     <label for="exampleInputRencanaTinggiBangunan"><span class="text-danger">*</span> Rencana Tinggi
                       Bangunan <span class="text-danger">m</span></label>
-                    <input type="number" name="rencana_tinggi_bangunan" class="form-control"
+                    <input required type="number" name="rencana_tinggi_bangunan" class="form-control"
                       id="rencana_tinggi_bangunan" placeholder="Rencana Tinggi Bangunan"></input>
                   </div>
 
                   <div class="form-group">
                     <label for="exampleInputRencanaTotalLuasLantai"><span class="text-danger">*</span> Rencana Total
                       Luas Lantai <span class="text-danger">m<sup>2</sup></span></label>
-                    <input type="number" name="rencana_total_luas_lantai" class="form-control"
+                    <input required type="number" name="rencana_total_luas_lantai" class="form-control"
                       id="rencana_total_luas_lantai" placeholder="Rencana Total Luas Lantai"></input>
                   </div>
 
@@ -185,8 +187,8 @@
                     <label for="exampleInputFile">Formulir Permohonan Bermaterai</label>
                     <div class="input-group">
                       <div class="custom-file">
-                        <input type="file" accept=".pdf" class="custom-file-input" id="file_permohonan_bermaterai"
-                          name="file_permohonan_bermaterai">
+                        <input type="file" accept=" application/pdf,image/jpeg,image/jpg,image/png"
+                          class="custom-file-input" id="file_permohonan_bermaterai" name="file_permohonan_bermaterai">
                         <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                       </div>
                     </div>
@@ -196,8 +198,8 @@
                       yang mengurus bukan pemilik tanah)</label>
                     <div class="input-group">
                       <div class="custom-file">
-                        <input type="file" accept=".pdf" class="custom-file-input" id="file_ktp_pemohon"
-                          name="file_ktp_pemohon">
+                        <input type="file" accept=" application/pdf,image/jpeg,image/jpg,image/png"
+                          class="custom-file-input" id="file_ktp_pemohon" name="file_ktp_pemohon">
                         <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                       </div>
                     </div>
@@ -207,8 +209,8 @@
                       Bidang)</label>
                     <div class="input-group">
                       <div class="custom-file">
-                        <input type="file" accept=".pdf" class="custom-file-input" id="file_bukti_penguasaan_tanah"
-                          name="file_bukti_penguasaan_tanah">
+                        <input type="file" accept=" application/pdf,image/jpeg,image/jpg,image/png"
+                          class="custom-file-input" id="file_bukti_penguasaan_tanah" name="file_bukti_penguasaan_tanah">
                         <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                       </div>
                     </div>
@@ -217,8 +219,8 @@
                     <label for="exampleInputFile">Surat Keterangan Waris (bila pemilik meninggal dunia)</label>
                     <div class="input-group">
                       <div class="custom-file">
-                        <input type="file" accept=".pdf" class="custom-file-input" id="file_surat_keterangan_waris"
-                          name="file_surat_keterangan_waris">
+                        <input type="file" accept=" application/pdf,image/jpeg,image/jpg,image/png"
+                          class="custom-file-input" id="file_surat_keterangan_waris" name="file_surat_keterangan_waris">
                         <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                       </div>
                     </div>
@@ -227,7 +229,8 @@
                     <label for="exampleInputFile">Dokumen Perjanjian Sewa Menyewa</label>
                     <div class="input-group">
                       <div class="custom-file">
-                        <input type="file" accept=".pdf" class="custom-file-input" id="file_dokumen_perjanjian_sewa"
+                        <input type="file" accept=" application/pdf,image/jpeg,image/jpg,image/png"
+                          class="custom-file-input" id="file_dokumen_perjanjian_sewa"
                           name="file_dokumen_perjanjian_sewa">
                         <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                       </div>
@@ -237,8 +240,8 @@
                     <label for="exampleInputFile">Dokumen Akta Jual Beli dan Surat Pernyataan Pemilik Tanah</label>
                     <div class="input-group">
                       <div class="custom-file">
-                        <input type="file" accept=".pdf" class="custom-file-input" id="file_dokumen_akta_jual_beli"
-                          name="file_dokumen_akta_jual_beli">
+                        <input type="file" accept=" application/pdf,image/jpeg,image/jpg,image/png"
+                          class="custom-file-input" id="file_dokumen_akta_jual_beli" name="file_dokumen_akta_jual_beli">
                         <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                       </div>
                     </div>
@@ -247,7 +250,8 @@
                     <label for="exampleInputFile">Surat Pernyataan Pemohon Bermeterai</label>
                     <div class="input-group">
                       <div class="custom-file">
-                        <input type="file" accept=".pdf" class="custom-file-input" id="file_surat_pernyataan_pemohon"
+                        <input type="file" accept=" application/pdf,image/jpeg,image/jpg,image/png"
+                          class="custom-file-input" id="file_surat_pernyataan_pemohon"
                           name="file_surat_pernyataan_pemohon">
                         <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                       </div>
@@ -269,8 +273,8 @@
                       (RTB) / Rencana Induk Kawasan (RIK)</label>
                     <div class="input-group">
                       <div class="custom-file">
-                        <input type="file" accept=".pdf" class="custom-file-input" id="file_rencana_penggunaan_air"
-                          name="file_rencana_penggunaan_air">
+                        <input type="file" accept=" application/pdf,image/jpeg,image/jpg,image/png"
+                          class="custom-file-input" id="file_rencana_penggunaan_air" name="file_rencana_penggunaan_air">
                         <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                       </div>
                     </div>
@@ -280,8 +284,9 @@
                       Lainnya)</label>
                     <div class="input-group">
                       <div class="custom-file">
-                        <input type="file" accept=".pdf" class="custom-file-input"
-                          id="file_dokumen_perizinan_sebelumnya" name="file_dokumen_perizinan_sebelumnya">
+                        <input type="file" accept=" application/pdf,image/jpeg,image/jpg,image/png"
+                          class="custom-file-input" id="file_dokumen_perizinan_sebelumnya"
+                          name="file_dokumen_perizinan_sebelumnya">
                         <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                       </div>
                     </div>
@@ -290,8 +295,8 @@
                     <label for="exampleInputFile">Surat Keterangan Untuk Kepentingan Umum</label>
                     <div class="input-group">
                       <div class="custom-file">
-                        <input type="file" accept=".pdf" class="custom-file-input" id="file_kepentingan_umum"
-                          name="file_kepentingan_umum">
+                        <input type="file" accept=" application/pdf,image/jpeg,image/jpg,image/png"
+                          class="custom-file-input" id="file_kepentingan_umum" name="file_kepentingan_umum">
                         <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                       </div>
                     </div>
@@ -345,10 +350,13 @@
                         <label for="exampleInputFile">Gambar Sisi Timur</label>
                         <div class="input-group">
 
+
+
+
                           <div class="custom-file">
 
-           
-                 <input type="file" accept=".jpg, .jpeg. .png" class="custom-file-input"
+
+                            <input type="file" accept=".jpg, .jpeg. .png" class="custom-file-input"
                               id="file_gambar_sisi_timur" name="file_gambar_sisi_timur">
                             <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                           </div>

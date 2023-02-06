@@ -6,8 +6,9 @@
       <div class="section-title">
         <h3>Status Pengajuan</h3>
         <p>Berikut ini status pengajuan KKPR Berusaha dan KKPR Non Berusaha:</p>
-        <span style="color: red;">*Jika diterima/disetujui silahkan datang ke kantor perizinan untuk penyerahan dan
-          pengambilan berkas perizinan.</span>
+        <span style="color: red;">*Jika diterima/disetujui silahkan unduh berkas perizinan dan datang ke kantor
+          perizinan untuk penyerahan dan
+          pengambilan berkas perizinan selanjutnya.</span>
       </div>
 
       <div class="column">
@@ -38,8 +39,10 @@
           </tr>
 
           <tr>
-            <th>Nomor Dokumen :</th>
-            <td><?= $data['no_dokumen_berusaha']; ?></td>
+            <!-- <th>Nomor Dokumen :</th>
+            <td><?= $data['no_dokumen_berusaha']; ?></td> -->
+            <th>Unduh Dokumen :</th>
+            <td><a class="btn btn-primary" href="<?= base_url('perizinan/surat_perizinan_berusaha'); ?>">Unduh</a></td>
           </tr>
           </tbody>
           </table>
@@ -101,8 +104,10 @@
 </tr>
 
 <tr>
-  <th>Nomor Dokumen :</th>
-  <td><?= $data['no_dokumen_nonberusaha']; ?></td>
+  <!-- <th>Nomor Dokumen :</th>
+  <td><?= $data['no_dokumen_nonberusaha']; ?></td> -->
+  <th>Unduh Dokumen :</th>
+  <td><a class="btn btn-primary" href="<?= base_url('perizinan/surat_perizinan_nonberusaha'); ?>">Unduh</a></td>
 </tr>
 </tbody>
 </table>
@@ -138,6 +143,7 @@
 
 </div>
 </section><!-- End Contact Section -->
+
 
 
 </main><!-- End #main -->

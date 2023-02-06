@@ -44,23 +44,45 @@
               <div class="modal-body">
                 <div class="form-group">
                   <div class="mb-3">
+                    <label for="">NIK</label>
+                    <input type="text" class="form-control" id="nik" name="nik" placeholder="NIK"
+                      value="<?= set_value('nik'); ?>">
+                    <?= form_error('nik', '<small class="text-danger pl-3">', '</small>'); ?>
+                  </div>
+                  <div class="mb-3">
                     <label for="">Nama Lengkap</label>
-                    <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama Lengkap" value="<?= set_value('nama'); ?>">
+                    <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama Lengkap"
+                      value="<?= set_value('nama'); ?>">
                     <?= form_error('nama', '<small class="text-danger pl-3">', '</small>'); ?>
                   </div>
                   <div class="mb-3">
+                    <label for="">Pekerjaan</label>
+                    <input type="text" class="form-control" id="pekerjaan" name="pekerjaan" placeholder="Pekerjaan"
+                      value="<?= set_value('pekerjaan'); ?>">
+                    <?= form_error('pekerjaan', '<small class="text-danger pl-3">', '</small>'); ?>
+                  </div>
+                  <div class="mb-3">
+                    <label for="">No HP</label>
+                    <input type="text" class="form-control" id="no_hp" name="no_hp" placeholder="No HP"
+                      value="<?= set_value('no_hp'); ?>">
+                    <?= form_error('no_hp', '<small class="text-danger pl-3">', '</small>'); ?>
+                  </div>
+                  <div class="mb-3">
                     <label for="">Email</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" value="<?= set_value('email'); ?>">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email"
+                      value="<?= set_value('email'); ?>">
                     <?= form_error('email', '<small class="text-danger pl-3">', '</small>'); ?>
                   </div>
                   <div class="mb-3">
                     <label for="">Password</label>
-                    <input type="password" class="form-control" id="password1" name="password1" placeholder="************">
+                    <input type="password" class="form-control" id="password1" name="password1"
+                      placeholder="************">
                     <?= form_error('password1', '<small class="text-danger pl-3">', '</small>'); ?>
                   </div>
                   <div class="mb-3">
                     <label for="">Ulangi Password</label>
-                    <input type="password" class="form-control" id="password2" name="password2" placeholder="************">
+                    <input type="password" class="form-control" id="password2" name="password2"
+                      placeholder="************">
                   </div>
                   <div class="mb-3">
                     <label for="">Role</label>
@@ -85,7 +107,9 @@
               </div>
             </form>
           </div>
-        </div>
+      
+  </div>
+
       </div>
       <!-- /.container-fluid -->
   </div>
