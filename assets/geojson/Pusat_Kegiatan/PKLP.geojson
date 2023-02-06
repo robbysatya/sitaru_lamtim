@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "PKLP",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "ID": 5, "KETERANGAN": "Ibu Kota Kecamatan", "Kec": "Pekalongan", "Pelayanan": "Sekunder", "Fungsi": "PKLp" }, "geometry": { "type": "Point", "coordinates": [ 105.359985371277432, -5.088092621020627 ] } },
+{ "type": "Feature", "properties": { "ID": 15, "KETERANGAN": "Ibu Kota Kecamatan", "Kec": "Bandar Sribawono", "Pelayanan": "Tersier", "Fungsi": "PKLp" }, "geometry": { "type": "Point", "coordinates": [ 105.731355346754796, -5.318113441061811 ] } },
+{ "type": "Feature", "properties": { "ID": 16, "KETERANGAN": "Ibu Kota Kecamatan", "Kec": "Sekampung Udik", "Pelayanan": "Sekunder", "Fungsi": "PKLp" }, "geometry": { "type": "Point", "coordinates": [ 105.565269120452427, -5.305576804589192 ] } }
+]
+}

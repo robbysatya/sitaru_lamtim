@@ -1,0 +1,11 @@
+{
+  "type": "FeatureCollection",
+  "name": "TPA3",
+  "features": [
+  { "type": "Feature", "properties": { "ID": 0, "StatusTPA": "Pengembangan TPA" }, "geometry": { "type": "Point", "coordinates": [ 105.599434369317166, -5.029075158812722 ] } },
+  { "type": "Feature", "properties": { "ID": 0, "StatusTPA": "Pengembangan TPA" }, "geometry": { "type": "Point", "coordinates": [ 105.699351684898076, -5.189193439757903 ] } },
+  { "type": "Feature", "properties": { "ID": 0, "StatusTPA": "Rencana TPA" }, "geometry": { "type": "Point", "coordinates": [ 105.556273995342067, -5.255686967614142 ] } },
+  { "type": "Feature", "properties": { "ID": 0, "StatusTPA": "Rencana TPA" }, "geometry": { "type": "Point", "coordinates": [ 105.740851929786857, -5.337133698346157 ] } }
+  ]
+  }
+  

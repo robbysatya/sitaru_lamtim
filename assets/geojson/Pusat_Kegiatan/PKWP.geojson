@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "PKWP",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "ID": 10, "KETERANGAN": "Ibu Kota Kabupaten", "Kec": "Sukadana", "Pelayanan": "Primer", "Fungsi": "PKWp" }, "geometry": { "type": "Point", "coordinates": [ 105.562994423911405, -5.060786559549435 ] } }
+]
+}

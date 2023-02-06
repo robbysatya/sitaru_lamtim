@@ -1,0 +1,25 @@
+{
+"type": "FeatureCollection",
+"name": "PPK",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "ID": 1, "KETERANGAN": "Ibu Kota Kecamatan", "Kec": "Way Bungur", "Pelayanan": "Tersier", "Fungsi": "PPK" }, "geometry": { "type": "Point", "coordinates": [ 105.50932571384476, -4.891963139729008 ] } },
+{ "type": "Feature", "properties": { "ID": 2, "KETERANGAN": "Ibu Kota Kecamatan", "Kec": "Purbolinggo", "Pelayanan": "Sekunder", "Fungsi": "PPK" }, "geometry": { "type": "Point", "coordinates": [ 105.506248204377613, -4.985756333960818 ] } },
+{ "type": "Feature", "properties": { "ID": 3, "KETERANGAN": "Ibu Kota Kecamatan", "Kec": "Raman Utara", "Pelayanan": "Tersier", "Fungsi": "PPK" }, "geometry": { "type": "Point", "coordinates": [ 105.434234750852141, -4.993752467932859 ] } },
+{ "type": "Feature", "properties": { "ID": 4, "KETERANGAN": "Ibu Kota Kecamatan", "Kec": "Batanghari Nuban", "Pelayanan": "Tersier", "Fungsi": "PPK" }, "geometry": { "type": "Point", "coordinates": [ 105.409238354661952, -5.034628881891162 ] } },
+{ "type": "Feature", "properties": { "ID": 6, "KETERANGAN": "Ibu Kota Kecamatan", "Kec": "Batanghari", "Pelayanan": "Tersier", "Fungsi": "PPK" }, "geometry": { "type": "Point", "coordinates": [ 105.37949637775688, -5.156667240298538 ] } },
+{ "type": "Feature", "properties": { "ID": 7, "KETERANGAN": "Ibu Kota Kecamatan", "Kec": "Metro Kibang", "Pelayanan": "Tersier", "Fungsi": "PPK" }, "geometry": { "type": "Point", "coordinates": [ 105.312733371760558, -5.187020366091255 ] } },
+{ "type": "Feature", "properties": { "ID": 8, "KETERANGAN": "Ibu Kota Kecamatan", "Kec": "Sekampung", "Pelayanan": "Tersier", "Fungsi": "PPK" }, "geometry": { "type": "Point", "coordinates": [ 105.419832118053677, -5.136090149150816 ] } },
+{ "type": "Feature", "properties": { "ID": 9, "KETERANGAN": "Ibu Kota Kecamatan", "Kec": "Bumi Agung", "Pelayanan": "Tersier", "Fungsi": "PPK" }, "geometry": { "type": "Point", "coordinates": [ 105.484713881322776, -5.109279940993561 ] } },
+{ "type": "Feature", "properties": { "ID": 11, "KETERANGAN": "Ibu Kota Kecamatan", "Kec": "Labuhan Ratu", "Pelayanan": "Tersier", "Fungsi": "PPK" }, "geometry": { "type": "Point", "coordinates": [ 105.688760970561745, -5.129204663563629 ] } },
+{ "type": "Feature", "properties": { "ID": 13, "KETERANGAN": "Ibu Kota Kecamatan", "Kec": "Braja Selebah", "Pelayanan": "Tersier", "Fungsi": "PPK" }, "geometry": { "type": "Point", "coordinates": [ 105.774270759886051, -5.208020462070268 ] } },
+{ "type": "Feature", "properties": { "ID": 14, "KETERANGAN": "Ibu Kota Kecamatan", "Kec": "Marga Tiga", "Pelayanan": "Tersier", "Fungsi": "PPK" }, "geometry": { "type": "Point", "coordinates": [ 105.517222657896397, -5.166823007772494 ] } },
+{ "type": "Feature", "properties": { "ID": 17, "KETERANGAN": "Ibu Kota Kecamatan", "Kec": "Melinting", "Pelayanan": "Tersier", "Fungsi": "PPK" }, "geometry": { "type": "Point", "coordinates": [ 105.749694487056999, -5.362793970213275 ] } },
+{ "type": "Feature", "properties": { "ID": 18, "KETERANGAN": "Ibu Kota Kecamatan", "Kec": "Mataram Baru", "Pelayanan": "Tersier", "Fungsi": "PPK" }, "geometry": { "type": "Point", "coordinates": [ 105.761578498581727, -5.302208446590361 ] } },
+{ "type": "Feature", "properties": { "ID": 20, "KETERANGAN": "Ibu Kota Kecamatan", "Kec": "Gunung Pelindung", "Pelayanan": "Tersier", "Fungsi": "PPK" }, "geometry": { "type": "Point", "coordinates": [ 105.748603347915889, -5.459179770726609 ] } },
+{ "type": "Feature", "properties": { "ID": 21, "KETERANGAN": "Ibu Kota Kecamatan", "Kec": "Pasir Sakti", "Pelayanan": "Tersier", "Fungsi": "PPK" }, "geometry": { "type": "Point", "coordinates": [ 105.792848606374321, -5.495397018100885 ] } },
+{ "type": "Feature", "properties": { "ID": 22, "KETERANGAN": "Ibu Kota Kecamatan", "Kec": "Waway Karya", "Pelayanan": "Tersier", "Fungsi": "PPK" }, "geometry": { "type": "Point", "coordinates": [ 105.588975478581133, -5.440063355397085 ] } },
+{ "type": "Feature", "properties": { "ID": 23, "KETERANGAN": "Ibu Kota Kecamatan", "Kec": "Marga Sekampung", "Pelayanan": "Tersier", "Fungsi": "PPK" }, "geometry": { "type": "Point", "coordinates": [ 105.604818331717638, -5.385080154990489 ] } },
+{ "type": "Feature", "properties": { "ID": 24, "KETERANGAN": "Ibu Kota Kecamatan", "Kec": "Jabung", "Pelayanan": "Tersier", "Fungsi": "PPK" }, "geometry": { "type": "Point", "coordinates": [ 105.673163432961701, -5.469820864543921 ] } }
+]
+}

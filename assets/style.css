@@ -1,0 +1,229 @@
+#map {
+	height: 100%;
+}
+
+.icon {
+	display: inline-block;
+	margin: 2px;
+	height: 16px;
+	width: 16px;
+	background-color: #ccc;
+}
+
+.icon-batas_kecamatan {
+	background-color: #f54842;
+}
+
+.icon-batas_kabupaten {
+	background-color: #ffff00;
+}
+
+.icon-sungai {
+	background: url("icons/river.png") center center no-repeat;
+	background-size: 80%;
+	background-position: 0%;
+}
+.icon-irigasi {
+	background: url("icons/river.png") center center no-repeat;
+	background-size: 80%;
+	background-position: 0%;
+}
+
+.icon-transmisi {
+	background: url("icons/transmisi.png") center center no-repeat;
+	background-size: 80%;
+	background-position: 0%;
+}
+
+.icon-jalan_arteri {
+	background: url("icons/jalan_arteri.png") center center no-repeat;
+	background-size: 100%;
+	background-position: 0%;
+}
+
+.icon-jalan_kolektor {
+	background: url("icons/jalan_kolektor.png") center center no-repeat;
+	background-size: 100%;
+	background-position: 0%;
+}
+
+.icon-jalan_lokal {
+	background: url("icons/jalan_lokal.png") center center no-repeat;
+	background-size: 100%;
+	background-position: 0%;
+}
+
+.icon-jalan_lain {
+	background: url("icons/jalan_lokal.png") center center no-repeat;
+	background-size: 100%;
+	background-position: 0%;
+}
+
+.icon-PipaGas {
+	background: url("icons/pipaGas.png") center center no-repeat;
+	background-size: 80%;
+	background-position: 0%;
+}
+
+.icon-gardu {
+	background: url("js/leaflet-panel-layers-master/examples/images/icons/gardu.png")
+		center center no-repeat;
+}
+
+.icon-pembangkit_listrik {
+	background: url("js/leaflet-panel-layers-master/examples/images/icons/pembangkit_listrik.png")
+		center center no-repeat;
+}
+
+.icon-tpa {
+	background: url("js/leaflet-panel-layers-master/examples/images/icons/tpa.png")
+		center center no-repeat;
+}
+
+.icon-bendungan {
+	background: url("js/leaflet-panel-layers-master/examples/images/icons/bendungan.png")
+		center center no-repeat;
+}
+
+.icon-pklp {
+	background: url("js/leaflet-panel-layers-master/examples/images/icons/pklp.png")
+		center center no-repeat;
+	/* height: 48px !important;
+		width: 48px !important; */
+}
+
+.icon-pkw {
+	background: url("icons/pkw.png") center center no-repeat;
+	background-size: 50%;
+}
+
+.icon-hutan_lindung {
+	background-color: #325f28;
+}
+
+.icon-hutan_produksi {
+	background-color: #4b9b37;
+}
+
+.icon-pertanian {
+	background-color: #c8f546;
+}
+
+.icon-perkebunan {
+	background-color: #afaf37;
+}
+
+.icon-perikanan {
+	background-color: #649bd2;
+}
+
+.icon-permukiman_kota {
+	background-color: #f59b1e;
+}
+
+.icon-permukiman_desa {
+	background-color: #eb9b3c;
+}
+
+.icon-industri {
+	background-color: #690000;
+}
+
+.icon-taman_nasional {
+	background-color: #6e6ee1;
+}
+
+.icon-pembangkit_listrik {
+	background: url("icons/pltu.png") center center no-repeat;
+	background-size: 50%;
+}
+
+.icon-gardu {
+	background: url("icons/gardu_listrik1.png") center center no-repeat;
+	background-size: 50%;
+}
+
+.icon-tpa {
+	background: url("icons/tpa.png") center center no-repeat;
+	background-size: 50%;
+}
+
+.icon-ppk {
+	background: url("icons/ppk.png") center center no-repeat;
+	background-size: 50%;
+}
+
+.icon-pklp {
+	background: url("icons/pkl.png") center center no-repeat;
+	background-size: 50%;
+}
+
+.icon-terminal {
+	background: url("icons/terminal.png") center center no-repeat;
+	background-size: 80%;
+}
+.icon-ekonomi {
+	background-color: #ff00c5;
+}
+.icon-lingkungan {
+	background-color: #55ff00;
+}
+.icon-sosbud {
+	background-color: #c500ff;
+}
+.icon-lp2b {
+	background-color: #1d00fc;
+}
+.icon-lsd {
+	background-color: #baeb34;
+}
+
+.leaflet-marker-icon {
+	padding: 2px;
+	text-align: center;
+}
+
+.marker-gardu {
+	background: url("icons/gardu_listrik1.png") center center no-repeat;
+	background-size: 30%;
+}
+
+.marker-pembangkit_listrik {
+	background: url("icons/pltu.png") center center no-repeat;
+	background-size: 30%;
+}
+
+.marker-tpa {
+	background: url("icons/tpa.png") center center no-repeat;
+	background-size: 30%;
+}
+
+.marker-bendungan {
+	background: url("icons/bendungan.png") center center no-repeat;
+	background-size: 50%;
+}
+
+.marker-pklp {
+	background: url("icons/pkl.png") center center no-repeat;
+	background-size: 20%;
+}
+
+.marker-pkw {
+	background: url("icons/pkw.png") center center no-repeat;
+	background-size: 20%;
+}
+
+.marker-pkwp {
+	background: url("icons/pkwp.png") center center no-repeat;
+	background-size: 50%;
+}
+
+.marker-ppk {
+	background: url("icons/ppk.png") center center no-repeat;
+	background-size: 50%;
+}
+
+.marker-terminal {
+	background: url("icons/terminal.png") center center no-repeat;
+	background-size: 50%;
+}

@@ -1,0 +1,14 @@
+{
+  "type": "FeatureCollection",
+  "name": "RencanaTeminal_fix",
+  "features": [
+  { "type": "Feature", "properties": { "ID": 0, "KETERANGAN": "Terminal Eksisting - Tipe C" }, "geometry": { "type": "Point", "coordinates": [ 105.757612083903439, -5.299042254125147 ] } },
+  { "type": "Feature", "properties": { "ID": 0, "KETERANGAN": "Terminal Eksisting - Tipe B" }, "geometry": { "type": "Point", "coordinates": [ 105.55062956352036, -5.073769520639932 ] } },
+  { "type": "Feature", "properties": { "ID": 0, "KETERANGAN": "Rencana Terminal - Tipe C" }, "geometry": { "type": "Point", "coordinates": [ 105.526333608189958, -4.966878750845583 ] } },
+  { "type": "Feature", "properties": { "ID": 0, "KETERANGAN": "Rencana Terminal - Tipe C" }, "geometry": { "type": "Point", "coordinates": [ 105.410993366256307, -5.135966718692546 ] } },
+  { "type": "Feature", "properties": { "ID": 0, "KETERANGAN": "Rencana Terminal - Tipe C" }, "geometry": { "type": "Point", "coordinates": [ 105.710895238888966, -5.171650041120982 ] } },
+  { "type": "Feature", "properties": { "ID": 0, "KETERANGAN": "Rencana Terminal - Tipe C" }, "geometry": { "type": "Point", "coordinates": [ 105.568058426195307, -5.30017897672787 ] } },
+  { "type": "Feature", "properties": { "ID": 0, "KETERANGAN": "Rencana Terminal - Tipe C" }, "geometry": { "type": "Point", "coordinates": [ 105.802853922927056, -5.350336523697296 ] } }
+  ]
+  }
+  

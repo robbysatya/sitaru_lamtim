@@ -1,0 +1,19 @@
+{
+"type": "FeatureCollection",
+"name": "JaringanPipaGas_fix",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "HH": null }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ 104.19037, -2.315971 ], [ 104.489042, -3.386367 ] ] ] } },
+{ "type": "Feature", "properties": { "HH": null }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ 104.479714, -3.488751 ], [ 105.217074, -4.726685 ] ] ] } },
+{ "type": "Feature", "properties": { "HH": null }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ 104.563714, -3.451519 ], [ 105.28241, -4.680147 ] ] ] } },
+{ "type": "Feature", "properties": { "HH": null }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ 105.273074, -4.801147 ], [ 105.749098, -5.340999 ] ] ] } },
+{ "type": "Feature", "properties": { "HH": null }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ 105.329074, -4.745301 ], [ 105.870434, -5.359615 ] ] ] } },
+{ "type": "Feature", "properties": { "HH": null }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ 105.749098, -5.340999 ], [ 106.12245, -5.685387 ], [ 106.15045, -5.936697 ], [ 106.103778, -6.011159 ] ] ] } },
+{ "type": "Feature", "properties": { "HH": null }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ 105.870434, -5.359615 ], [ 106.169106, -5.620233 ], [ 106.990481999998678, -5.899466 ] ] ] } },
+{ "type": "Feature", "properties": { "HH": null }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ 106.10894, -6.086439 ], [ 106.13098, -6.145056 ], [ 106.417524, -6.342888 ] ] ] } },
+{ "type": "Feature", "properties": { "HH": null }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ 107.02001199999853, -5.976532 ], [ 106.997963999998646, -6.079112 ] ] ] } },
+{ "type": "Feature", "properties": { "HH": null }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ 101.766696000043837, -4.642998999999334 ], [ 102.031196000024025, -4.642998999999667 ] ] ] } },
+{ "type": "Feature", "properties": { "HH": null }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ 101.774040000042135, -5.17055099999927 ], [ 102.038540000023076, -5.170550999999627 ] ] ] } },
+{ "type": "Feature", "properties": { "HH": null }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ 106.946539999998848, -5.536906 ], [ 106.667331999999647, -5.756719 ] ] ] } }
+]
+}
