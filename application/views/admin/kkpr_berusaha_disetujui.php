@@ -34,32 +34,32 @@
 								<h3 class="card-title">Tabel KKPR Berusaha Disetujui</h3>
 							</div>
 							<!-- /.card-header -->
-							<div class="card-body">
+							<div class="table-responsive">
 								<table id="example2" class="table table-bordered table-striped">
 									<thead>
 										<tr>
 											<th>No</th>
-											<th>NIK Pemohon</th>
 											<th>Nama Pemohon</th>
-											<th>Pekerjaan</th>
 											<th>No HP</th>
 											<th>Tanggal Pengajuan</th>
-											<th>Action</th>
+											<th>Tanggal Disetujui</th>
+											<th>Validator</th>
+											<th>Actions</th>
 										</tr>
 									</thead>
 									<tbody>
 										<?php $no = 1; ?>
-										<?php foreach ($kkpr_sudah as $data) : ?>
+										<?php foreach ($kkpr_sudah as $ks => $data) : ?>
 											<tr>
 												<td><?= $no; ?></td>
-												<td><?= $data['nik']; ?></td>
 												<td><?= $data['nama']; ?></td>
-												<td><?= $data['pekerjaan']; ?></td>
 												<td><?= $data['no_hp']; ?></td>
-												<td><?= date('d F Y', $data['tanggal']) ?></td>
+												<td><?= date('d F Y', $data['tanggal']); ?></td>
+												<td><?= date('d F Y', $data['tgl_disetujui']); ?></td>
 												<td><?= $user_name[$ks]['nama']; ?></td>
 												<td style="text-align: center;">
-													<a href="<?= base_url('admin/kkpr_Berusaha/Disetujui/Detail/' . $data['id']); ?>" class="btn btn-primary">Detail Data</a>
+													<a href=" <?= base_url('admin/kkpr_Berusaha/Disetujui/Detail/' . $data['id']); ?>" class="btn btn-primary row-sm-8"><i class=" fas fa-eye"></i>Detail</a>
+													<a href="<?= base_url('admin/kkpr_Berusaha/Disetujui/surat_perizinan/' . $data['id']); ?>" class="btn btn-success row-sm-8"><i class="fas fa-download"></i>Unduh</a>
 												</td>
 											</tr>
 											<?php $no++; ?>

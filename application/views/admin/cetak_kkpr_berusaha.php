@@ -32,7 +32,7 @@
 									<span>Tabel Data KKPR Berusaha</span>
 								</div>
 								<!-- /.card-header -->
-								<div class="card-body">
+								<div class="table-responsive">
 									<table id="example1" class="table table-bordered table-responsive">
 										<?php foreach ($kkpr_sudah as $data) : ?>
 											<thead>
@@ -52,8 +52,7 @@
 													<th>Alamat Kegiatan</th>
 													<th>Kecamatan</th>
 													<th>Kelurahan</th>
-													<th>Latittude</th>
-													<th>Longitude</th>
+													<th>Latittude & Longitude</th>
 													<th>Luas Tanah Dimohon</th>
 													<th>Luas Sesuai Bukti Kepemilikan Tanah</th>
 													<th>Luas Tanah (Untuk Bangunan)</th>
@@ -62,23 +61,6 @@
 													<th>Rencana Jumlah Lantai</th>
 													<th>Rencana Tinggi Bangunan</th>
 													<th>Rencana Total Luas Lantai</th>
-													<th>Formulir Permohonan Bermaterai</th>
-													<th>Fotokopi KTP berlaku dan NPWP Perusahaan</th>
-													<th>NIB (Nomor Induk Berusaha) + Seritikat Standar atau Izin</th>
-													<th>Bukti Penguasaan Tanah (SHM/SHGB/SHGU/SHP/Wakaf/HPL/Letter C + Peta Bidang)</th>
-													<th>Surat Keterangan Waris (bila pemilik meninggal dunia)</th>
-													<th>Dokumen Perjanjian Sewa Menyewa</th>
-													<th>Dokumen Akta Jual Beli dan Surat Pernyataan Pemilik Tanah</th>
-													<th>Surat Pernyataan Pemohon Bermeterai</th>
-													<th>Polygon Koordinat Lokasi Dimohon</th>
-													<th>Rencana Penggunaan Air Baku / Air bersih + Rencana Teknis Bangunan (RTB) / Rencana Induk
-														Kawasan (RIK)</th>
-													<th>Surat Kuasa bermaterai + Fc yang diberi kuasa</th>
-													<th>Dokumen Perizinan Sebelumnya (AP/KRK/IPPT/ Rekomendasi Teknis Lainnya)</th>
-													<th>Gambar Sisi Utara</th>
-													<th>Gambar Sisi Selatan</th>
-													<th>Gambar Sisi Barat</th>
-													<th>Gambar Sisi Timur</th>
 												</tr>
 											</thead>
 											<tbody>
@@ -98,8 +80,7 @@
 													<td><?= $data['alamat_kegiatan']; ?></td>
 													<td><?= $data['kecamatan']; ?></td>
 													<td><?= $data['kelurahan']; ?></td>
-													<td><?= $data['latittude']; ?></td>
-													<td><?= $data['longitude']; ?></td>
+													<td><?= $data['latittude_longitude']; ?></td>
 													<td><?= $data['luas_tanah_dimohon']; ?> m<sup>2</sup></td>
 													<td><?= $data['luas_tanah_sesuai_bukti']; ?> m<sup>2</sup></td>
 													<td><?= $data['luas_bangunan']; ?> m<sup>2</sup></td>
@@ -108,69 +89,7 @@
 													<td><?= $data['rencana_jumlah_lantai']; ?></td>
 													<td><?= $data['rencana_tinggi_bangunan']; ?> m</td>
 													<td><?= $data['rencana_total_luas_lantai']; ?> m<sup>2</sup></td>
-													<td>
-														<?= base_url('assets/file/kkpr_berusaha/') . $data['file_permohonan_bermaterai']; ?>
-													</td>
 
-													<td>
-														<?= base_url('assets/file/kkpr_berusaha/') . $data['file_ktp_npwp']; ?>
-													</td>
-
-													<td>
-														<?= base_url('assets/file/kkpr_berusaha/') . $data['file_nib']; ?>
-													</td>
-
-													<td>
-														<?= base_url('assets/file/kkpr_berusaha/') . $data['file_bukti_penguasaan_tanah']; ?>
-													</td>
-
-													<td>
-														<?= base_url('assets/file/kkpr_berusaha/') . $data['file_surat_keterangan_waris']; ?>
-													</td>
-
-													<td>
-														<?= base_url('assets/file/kkpr_berusaha/') . $data['file_dokumen_perjanjian_sewa']; ?>
-													</td>
-
-													<td>
-														<?= base_url('assets/file/kkpr_berusaha/') . $data['file_dokumen_akta_jual_beli']; ?>
-													</td>
-
-													<td>
-														<?= base_url('assets/file/kkpr_berusaha/') . $data['file_surat_pernyataan_pemohon']; ?>
-													</td>
-
-													<td>
-														<?= base_url('assets/file/kkpr_berusaha/') . $data['file_polygon_koordinat']; ?>
-													</td>
-
-													<td>
-														<?= base_url('assets/file/kkpr_berusaha/') . $data['file_rencana_penggunaan_air']; ?>
-													</td>
-
-													<td>
-														<?= base_url('assets/file/kkpr_berusaha/') . $data['file_surat_kuasa']; ?>
-													</td>
-
-													<td>
-														<?= base_url('assets/file/kkpr_berusaha/') . $data['file_dokumen_perizinan_sebelumnya']; ?>
-													</td>
-
-													<td>
-														<?= base_url('assets/file/kkpr_berusaha/') . $data['file_gambar_sisi_utara']; ?>
-													</td>
-
-													<td>
-														<?= base_url('assets/file/kkpr_berusaha/') . $data['file_gambar_sisi_selatan']; ?>
-													</td>
-
-													<td>
-														<?= base_url('assets/file/kkpr_berusaha/') . $data['file_gambar_sisi_barat']; ?>
-													</td>
-
-													<td>
-														<?= base_url('assets/file/kkpr_berusaha/') . $data['file_gambar_sisi_timur']; ?>
-													</td>
 												</tr>
 											</tbody>
 										<?php endforeach; ?>

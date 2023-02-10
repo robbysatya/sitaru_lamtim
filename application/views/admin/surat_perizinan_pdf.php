@@ -2,58 +2,45 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?= $title_pdf; ?></title>
-  <style>
-  #table {
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
-
-  #table td,
-  #table th {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
-
-  #table tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-
-  #table tr:hover {
-    background-color: #ddd;
-  }
-
-  #table th {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: left;
-    background-color: #4CAF50;
-    color: white;
-  }
-  </style>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="<link rel=" stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<title><?= $title_pdf; ?> </title>
+	<style>
+		.line-title {
+			border: 0;
+			border-style: unset;
+			border-top: 1px solid #000;
+		}
+	</style>
 </head>
 
 <body>
-  <div style="text-align:center">
-    <h3> <?= $title_pdf; ?></h3>
-  </div>
-  <table id="table">
-    <thead>
-      <tr>
-        <th>No. Dokumen</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <?php foreach ($data_surat as $data) : ?>
-        <td scope="row"><?= $data['no_dokumen']; ?></td>
-        <?php endforeach; ?>
-      </tr>
-    </tbody>
-  </table>
+	<div>
+		<img src="<?= base_url('assets/') ?>img/lampungtimur-logo.png" style="position:absolute; width: 60px; height:auto; ">
+	</div>
+	<div style="text-align:center">
+		<h5>DINAS PEKERJAAN UMUM DAN PENATAAN RUANG</h5>
+		<h5> PEMERINTAH KABUPATEN LAMPUNG TIMUR </h5>
+		<h6>Jl. Buay Anak Tuha Komplek Perkantoran Pemkab Lampung Timur Telp. (0725) 625044</h6>
+	</div>
+	<hr class="line-title">
+	<table id="table" class="text-center" align="center">
+		<thead>
+			<tr>
+				<th><?= $title_pdf; ?></th>
+			</tr>
+		</thead>
+		<hr class="line-title">
+		<tbody>
+			<tr style="text-size-adjust: 5px;">
+				<?php foreach ($data_surat as $data) : ?>
+					<td scope="row"><?= $data['no_dokumen']; ?></td>
+				<?php endforeach; ?>
+			</tr>
+		</tbody>
+	</table>
 </body>
 
 </html>
