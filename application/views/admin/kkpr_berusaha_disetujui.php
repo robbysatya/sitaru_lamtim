@@ -58,8 +58,13 @@
 												<td><?= date('d F Y', $data['tgl_disetujui']); ?></td>
 												<td><?= $user_name[$ks]['nama']; ?></td>
 												<td style="text-align: center;">
+<<<<<<< HEAD
 													<a href=" <?= base_url('admin/kkpr_Berusaha/Disetujui/Detail/' . $data['id']); ?>" class="btn btn-primary row-sm-8"><i class=" fas fa-eye"></i>Detail</a>
 													<a href="<?= base_url('admin/kkpr_Berusaha/Disetujui/surat_perizinan/' . $data['id']); ?>" class="btn btn-success row-sm-8"><i class="fas fa-download"></i>Unduh</a>
+=======
+													<a href="<?= base_url('admin/kkpr_Berusaha/Disetujui/Detail/' . $data['id']); ?>" class="btn btn-primary">Detail Data</a>
+													<a href="<?= base_url('admin/kkpr_Berusaha/Disetujui/surat_perizinan/' . $data['id']); ?>" class="btn btn-success"><i class="fas fa-download"></i> Unduh Berkas</a>
+>>>>>>> 36cbdaff934f52ed046aae7265deb5f087d80c82
 												</td>
 											</tr>
 											<?php $no++; ?>
