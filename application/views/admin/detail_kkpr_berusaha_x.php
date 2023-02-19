@@ -317,11 +317,14 @@
 							<span aria-hidden="true">&times;</span>
 						</button>
 					</div>
-					<form action="<?= base_url('admin/kkpr_Berusaha/BelumDisetujui/terima') ?>" method="post">
+					<form action="<?= base_url('admin/kkpr_NonBerusaha/BelumDisetujui/terima') ?>" method="post">
 						<div class="modal-body">
 							<p>Apa anda yakin ingin menerima pengajuan <b><?= $data['nama']; ?></b>? </p>
 							<p style="color: red;">*Pastikan semua data dan berkas telah sesuai</p>
-							<input ty pe="text" class="form-control" id="id" name="id" placeholder="ID" required value="<?= $data['id']; ?>" hidden>
+							<b>Masukan Nomor Berkas Dibawah ini: </b>
+							<input type="text" class="form-control" id="no_dokumen" name="no_dokumen" placeholder="Masukan Nomor Dokumen" required>
+							<input type="text" class="form-control" id="id" name="id" placeholder="ID" required value="<?= $data['id']; ?>" hidden>
+							<input type="text" class="form-control" id="nik" name="nik" placeholder="NIK" required value="<?= $data['nik']; ?>" hidden>
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fas fa-fw fa-times"></i>
