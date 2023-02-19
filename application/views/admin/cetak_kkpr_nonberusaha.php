@@ -34,8 +34,7 @@
 								<!-- /.card-header -->
 								<div class="card-body">
 									<table id="example1" class="table table-bordered table-responsive">
-										<?php foreach ($kkpr_sudah as $data) : ?>
-											<thead>
+										<thead>
 												<tr>
 													<th>NIK Pemohon</th>
 													<th>Nama Pemohon</th>
@@ -58,6 +57,7 @@
 													<th>Rencana Total Luas Lantai</th>
 												</tr>
 											</thead>
+											<?php foreach ($kkpr_sudah as $data) : ?>
 											<tbody>
 												<tr>
 													<td><?= $data['nik']; ?></td>
@@ -94,5 +94,5 @@
 				</div>
 				<!-- /.container-fluid -->
 			</section>
-			<!- - /.content -->
+			<!-- /.content -->
 		</div>

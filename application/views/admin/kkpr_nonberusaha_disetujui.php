@@ -60,7 +60,7 @@
                       <td><?= $data['no_hp']; ?></td>
                       <td><?= date('d F Y', $data['tanggal']); ?></td>
                       <td><?= date('d F Y', $data['tgl_disetujui']); ?></td>
-                      <td><?= $user_name[$ks]['nama']; ?></td>
+                      <td><?= $data['validator']; ?></td>
                       <td style="text-align: center;">
                         <a href="<?= base_url('admin/kkpr_NonBerusaha/Disetujui/Detail/' . $data['id']); ?>"
                           class="btn btn-primary">Detail Data</a><br><br>
