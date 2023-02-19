@@ -235,4 +235,21 @@ class kkpr_NonBerusaha_model extends CI_Model
 	{
 		return $this->db->query("SELECT nik FROM tb_user");
 	}
+
+	public function validator()
+	{
+
+		$this->db->select('tb_kkpr_nonberusaha.validator, tb_user.*');
+		$this->db->from('tb_user');
+		$this->db->join('tb_kkpr_nonberusaha', 'tb_kkpr_nonberusaha.validator = tb_user.email');
+		$query = $this->db->get();
+
+		return $query->result_array();
+
+		// $query = "SELECT `tb_kkpr_nonberusaha`.`validator`, `tb_user`.*
+		// 					FROM `tb_user` JOIN `tb_kkpr_nonberusaha`
+		// 					ON `tb_kkpr_nonberusaha`.`validator` = `tb_user`.`email`";
+
+		// return $this->db->query($query)->result_array();
+	}
 }

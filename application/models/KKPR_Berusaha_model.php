@@ -242,4 +242,13 @@ class kkpr_Berusaha_model extends CI_Model
 		$this->db->where('nik', $nik);
 		$this->db->delete('tb_kkpr_berusaha');
 	}
+
+	public function validator()
+	{
+		$query = "SELECT `tb_user`.*, `tb_kkpr_berusaha`.`validator`
+							FROM `tb_user` JOIN `tb_kkpr_berusaha`
+							ON `tb_user`.`email` = `tb_kkpr_berusaha`.`validator`";
+
+		return $this->db->query($query)->result_array();
+	}
 }

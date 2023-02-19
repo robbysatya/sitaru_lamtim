@@ -70,7 +70,7 @@
                     </tr>
                     <tr>
                       <th>Validator</th>
-                      <td><?= $user_name[$ks]['nama']; ?></td>
+                      <td><?= $user_name[$ks]['validator']; ?></td>
                     </tr>
                     <tr>
                       <th>No Dokumen</th>
@@ -285,16 +285,7 @@
                           href="<?= base_url('assets/file/kkpr_nonberusaha/') . $data['file_gambar_sisi_barat']; ?>">
                           <i class="fas fa-eye"></i> Lihat Berkas
 
-                        </a>
-
-
-
-
-
-
-
-
-       
+                        </a>     
                </td>
                     </tr>
                     <tr>
