@@ -34,7 +34,7 @@
 								<h3 class="card-title">Tabel KKPR Berusaha Belum Disetujui</h3>
 							</div>
 							<!-- /.card-header -->
-							<div class="table-responsive-lg">
+							<div class="card-body">
 								<table id="example2" class="table table-bordered table-striped">
 									<thead>
 										<tr>

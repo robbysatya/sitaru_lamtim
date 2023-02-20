@@ -26,17 +26,17 @@
 		<h6>Jl. Buay Anak Tuha Komplek Perkantoran Pemkab Lampung Timur Telp. (0725) 625044</h6>
 	</div>
 	<hr class="line-title">
-
-	<table id="table">
+	<table id="table" class="text-center" align="center">
 		<thead>
 			<tr>
-				<th>No. Dokumen</th>
+				<th><?= $title_pdf; ?></th>
 			</tr>
 		</thead>
+		<hr class="line-title">
 		<tbody>
-			<tr>
+			<tr style="text-size-adjust: 5px;">
 				<?php foreach ($data_surat as $data) : ?>
-					<td scope="row"><?= $data['no_dokumen']; ?></td>
+					<td scope="row"><?= $data['no_dokumen_nonberusaha']; ?></td>
 				<?php endforeach; ?>
 			</tr>
 		</tbody>

@@ -34,14 +34,15 @@
 								<!-- /.card-header -->
 								<div class="table-responsive">
 									<table id="example1" class="table table-bordered table-responsive">
-										<?php foreach ($kkpr_sudah as $data) : ?>
-											<thead>
-												<tr>
-													<th>NIK Pemohon</th>
-													<th>Nama Pemohon</th>
+										<thead>
+											<tr>
+												<th>NIK Pemohon</th>
+												<th>Nama Pemohon</th>
 													<th>Pekerjaan</th>
 													<th>No HP</th>
 													<th>Tanggal Pengajuan</th>
+													<th>Tanggal Disetuji</th>
+													<th>Validator</th>
 													<th>Alamat Pemohon</th>
 													<th>Fungsi</th>
 													<th>NIB</th>
@@ -64,12 +65,15 @@
 												</tr>
 											</thead>
 											<tbody>
+												<?php foreach ($kkpr_sudah as $data) : ?>
 												<tr>
 													<td><?= $data['nik']; ?></td>
 													<td><?= $data['nama']; ?></td>
 													<td><?= $data['pekerjaan']; ?></td>
 													<td><?= $data['no_hp']; ?></td>
 													<td><?= date('d F Y', $data['tanggal']) ?></td>
+													<td><?= date('d F Y', $data['tgl_disetujui']) ?></td>
+													<td><?= $data['validator']; ?></td>
 													<td><?= $data['alamat_pemohon']; ?></td>
 													<td><?= $data['fungsi_bangunan']; ?></td>
 													<td><?= $data['nib']; ?></td>
@@ -89,10 +93,10 @@
 													<td><?= $data['rencana_jumlah_lantai']; ?></td>
 													<td><?= $data['rencana_tinggi_bangunan']; ?> m</td>
 													<td><?= $data['rencana_total_luas_lantai']; ?> m<sup>2</sup></td>
+													<?php endforeach; ?>
 
 												</tr>
 											</tbody>
-										<?php endforeach; ?>
 									</table>
 								</div>
 								<!-- /.card-body -->

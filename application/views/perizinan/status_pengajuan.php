@@ -42,7 +42,7 @@
 						<!-- <th>Nomor Dokumen :</th>
             <td><?= $data['no_dokumen_berusaha']; ?></td> -->
 						<th>Unduh Dokumen :</th>
-						<td><a class="btn btn-primary" href="<?= base_url('kkpr_Berusaha/Disetujui/surat_perizinan/' . $data['id']); ?>">Unduh</a></td>
+						<td><a class="btn btn-primary" href="<?= base_url('Perizinan/surat_perizinan_berusaha/'); ?>">Unduh</a></td>
 					</tr>
 					</tbody>
 					</table>
@@ -107,7 +107,7 @@
 		<!-- <th>Nomor Dokumen :</th>
   <td><?= $data['no_dokumen_nonberusaha']; ?></td> -->
 		<th>Unduh Dokumen :</th>
-		<td><a class="btn btn-primary" href="<?= base_url('kkpr_NonBerusaha/Disetujui/surat_perizinan/' . $data['id']); ?>">Unduh</a></td>
+		<td><a class="btn btn-primary" href="<?= base_url('Perizinan/surat_perizinan_nonberusaha/'); ?>">Unduh</a></td>
 	</tr>
 	</tbody>
 	</table>

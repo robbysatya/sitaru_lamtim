@@ -41,6 +41,8 @@
 													<th>Pekerjaan</th>
 													<th>No HP</th>
 													<th>Tanggal Pengajuan</th>
+													<th>Tanggal Disetuji</th>
+													<th>Validator</th>
 													<th>Alamat Pemohon</th>
 													<th>Fungsi</th>
 													<th>Alamat Kegiatan</th>
@@ -57,14 +59,16 @@
 													<th>Rencana Total Luas Lantai</th>
 												</tr>
 											</thead>
-											<?php foreach ($kkpr_sudah as $data) : ?>
 											<tbody>
+												<?php foreach ($kkpr_sudah as $data) : ?>
 												<tr>
 													<td><?= $data['nik']; ?></td>
 													<td><?= $data['nama']; ?></td>
 													<td><?= $data['pekerjaan']; ?></td>
 													<td><?= $data['no_hp']; ?></td>
 													<td><?= date('d F Y', $data['tanggal']) ?></td>
+													<td><?= date('d F Y', $data['tgl_disetujui']) ?></td>
+													<td><?= $data['validator']; ?></td>
 													<td><?= $data['alamat_pemohon']; ?></td>
 													<td><?= $data['fungsi_bangunan']; ?></td>
 													<td><?= $data['alamat_kegiatan']; ?></td>
@@ -80,8 +84,8 @@
 													<td><?= $data['rencana_tinggi_bangunan']; ?> m</td>
 													<td><?= $data['rencana_total_luas_lantai']; ?> m<sup>2</sup></td>
 												</tr>
+												<?php endforeach; ?>
 											</tbody>
-										<?php endforeach; ?>
 									</table>
 								</div>
 								<!-- /.card-body -->

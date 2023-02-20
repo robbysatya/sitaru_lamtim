@@ -36,7 +36,7 @@
 		<tbody>
 			<tr>
 				<?php foreach ($data_surat as $data) : ?>
-					<td scope="row"><?= $data['no_dokumen']; ?></td>
+					<td scope="row"><?= $data['no_dokumen_berusaha']; ?></td>
 				<?php endforeach; ?>
 			</tr>
 		</tbody>

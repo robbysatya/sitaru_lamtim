@@ -24,7 +24,7 @@
       </div><!-- /.container-fluid -->
     </section>
     <section class="content">
-      <div class="container-fluid">
+      <div class="container-fluid ">
         <?= form_error('menu', '<div class="alert alert-danger" role="alert">', '</div>'); ?>
         <?= $this->session->flashdata('message');  ?>
         <div class="row">
@@ -62,10 +62,8 @@
                       <td><?= date('d F Y', $data['tgl_disetujui']); ?></td>
                       <td><?= $data['validator']; ?></td>
                       <td style="text-align: center;">
-                        <a href="<?= base_url('admin/kkpr_NonBerusaha/Disetujui/Detail/' . $data['id']); ?>"
-                          class="btn btn-primary">Detail Data</a><br><br>
-                        <a href="<?= base_url('admin/kkpr_NonBerusaha/Disetujui/surat_perizinan/' . $data['id']); ?>"
-                          class="btn btn-success"><i class="fas fa-download"></i> Unduh Berkas</a>
+                        <a href=" <?= base_url('admin/kkpr_NonBerusaha/Disetujui/Detail/' . $data['id']); ?>" class="btn btn-primary row-sm-8"><i class=" fas fa-eye"></i> Detail</a><br><br>
+													<a href="<?= base_url('admin/kkpr_NonBerusaha/Disetujui/surat_perizinan/' . $data['id']); ?>" class="btn btn-success row-sm-8"><i class="fas fa-download"></i>Unduh</a>
                       </td>
                     </tr>
                     <?php $no++; ?>
@@ -81,7 +79,6 @@
         <!-- /.row -->
       </div>
       <!-- /.container-fluid -->
-      <
- /s ection>
+      </section>
         <!- - /.content -->
   </div>
