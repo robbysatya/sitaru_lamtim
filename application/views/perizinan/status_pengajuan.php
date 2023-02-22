@@ -42,7 +42,7 @@
 						<!-- <th>Nomor Dokumen :</th>
             <td><?= $data['no_dokumen_berusaha']; ?></td> -->
 						<th>Unduh Dokumen :</th>
-						<td><a class="btn btn-primary" href="<?= base_url('Perizinan/surat_perizinan_berusaha/'); ?>">Unduh</a></td>
+						<td><a class="btn btn-primary" href="<?= base_url('Perizinan/surat_perizinan_berusaha/'); ?> " target="_blank">Unduh</a></td>
 					</tr>
 					</tbody>
 					</table>
@@ -73,27 +73,25 @@
 		</div>
 
 
-		<div class="col-md-12">
-			<div class="card card-default">
-				<div class="card-header ">
-					Status Pengajuan KKPR Non Berusaha
-				</div>
-				<div class="card-body m-0">
-					<table id="example1" class="table table-borderless table-responsive">
-						<tbody>
-							<?php foreach ($user_data as $data) : ?>
-								<?php if ($data['status_nonberusaha'] == '' && $data['alasan_nonberusaha'] == '') { ?>
-									<tr>
-										<th>
-											<span style="color: grey;">Anda belum mengajukan apapun terkait KKPR Non Berusaha</h6>
-										</th>
-									</tr>
-						</tbody>
-					</table>
-				</div>
-				<!-- /.card -->
-			</div>
 		</div>
+		<div class="card card-default">
+			<div class="card-header ">
+				Status Pengajuan KKPR Non Berusaha
+			</div>
+			<div class="card-body m-0">
+				<table id="example1" class="table table-borderless table-responsive">
+					<tbody>
+						<?php foreach ($user_data as $data) : ?>
+							<?php if ($data['status_nonberusaha'] == '' && $data['alasan_nonberusaha'] == '') { ?>
+								<tr>
+									<th>
+										<span style="color: grey;">Anda belum mengajukan apapun terkait KKPR Non Berusaha</h6>
+									</th>
+								</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- /.card -->
 		</div>
 	</section>
 </main>
@@ -107,7 +105,7 @@
 		<!-- <th>Nomor Dokumen :</th>
   <td><?= $data['no_dokumen_nonberusaha']; ?></td> -->
 		<th>Unduh Dokumen :</th>
-		<td><a class="btn btn-primary" href="<?= base_url('Perizinan/surat_perizinan_nonberusaha/'); ?>">Unduh</a></td>
+		<td><a class="btn btn-primary" href="<?= base_url('Perizinan/surat_perizinan_nonberusaha/'); ?> " target="_blank">Unduh</a></td>
 	</tr>
 	</tbody>
 	</table>
