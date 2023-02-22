@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class surat_perizinan_nonberusaha extends CI_Controller
+class surat_perizinan_berusaha extends CI_Controller
 {
 	public function __construct()
 	{
