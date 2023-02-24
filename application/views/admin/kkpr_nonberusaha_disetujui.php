@@ -34,12 +34,11 @@
 								<h3 class="card-title">DataTable KKPR Non Berusaha Belum Disetujui</h3>
 							</div>
 							<!-- /.card-header -->
-							<div class="card-body">
-								<table id="example2" class="table table-bordered table-striped">
+							<div class="card-body ">
+								<table id="example2" class="table table-bordered table-striped ">
 									<thead>
 										<tr>
 											<th>No</th>
-											<th>NIK Pemohon</th>
 											<th>Nama Pemohon</th>
 											<th>Pekerjaan</th>
 											<th>No HP</th>
@@ -54,7 +53,6 @@
 										<?php foreach ($kkpr_sudah as $ks => $data) : ?>
 											<tr>
 												<td><?= $no; ?></td>
-												<td><?= $data['nik']; ?></td>
 												<td><?= $data['nama']; ?></td>
 												<td><?= $data['pekerjaan']; ?></td>
 												<td><?= $data['no_hp']; ?></td>
