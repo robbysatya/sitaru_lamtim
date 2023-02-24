@@ -231,7 +231,7 @@ class kkpr_NonBerusaha_model extends CI_Model
 		$this->db->delete('tb_kkpr_nonberusaha');
 	}
 
-	public function getNik(Type $var = null)
+	public function getNik()
 	{
 		return $this->db->query("SELECT nik FROM tb_user");
 	}
@@ -251,5 +251,15 @@ class kkpr_NonBerusaha_model extends CI_Model
 		// 					ON `tb_kkpr_nonberusaha`.`validator` = `tb_user`.`email`";
 
 		// return $this->db->query($query)->result_array();
+	}
+
+	public function surat_perizinan_noberusaha()
+	{
+		$this->db->select('*');
+		$this->db->from('tb_kkpr_nonberusaha');
+		$this->db->join('tb_user', 'tb_kkpr_nonberusaha.no_dokumen = tb_user.no_dokumen_nonberusaha');
+		$query = $this->db->get();
+
+		return $query->result_array();
 	}
 }

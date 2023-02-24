@@ -13,6 +13,10 @@
 			border-style: unset;
 			border-top: 1px solid #000;
 		}
+		tr td{
+			padding: 0 !important;
+			margin: 0 !important;
+		}
 	</style>
 </head>
 
@@ -35,12 +39,152 @@
 		<hr class="line-title">
 		<tbody>
 			<tr style="text-size-adjust: 5px;">
-				<?php foreach ($data_surat as $data) : ?>
+				<?php foreach ($data_surat as $ds => $data) : ?>
 					<td scope="row"><?= $data['no_dokumen_nonberusaha']; ?></td>
 				<?php endforeach; ?>
 			</tr>
 		</tbody>
 	</table>
+
+	<table id="table" class="table table-borderless">
+		<tbody>
+			<?php foreach ($data_surat as $data) : ?>
+			<tr>
+				<td>Nama Pemohon</td>
+				<td> : &nbsp;</td>
+				<td><?= $data['nama']; ?></td>
+			</tr>
+
+			<tr>
+				<td>NIK</td>
+				<td> : </td>
+				<td class="text-left"><?= $data['nik']; ?></td>
+			</tr>
+
+			<tr>
+				<td>Pekerjaan</td>
+				<td> : </td>
+				<td class="text-left"><?= $data['pekerjaan']; ?></td>
+			</tr>
+
+			<tr>
+				<td>No HP</td>
+				<td> : </td>
+				<td class="text-left"><?= $data['no_hp']; ?></td>
+			</tr>
+
+			<tr>
+				<td>Alamat Pemohon</td>
+				<td> : </td>
+				<td class="text-left"><?= $data_surat_all[$ds]['alamat_pemohon']; ?></td>
+			</tr>
+
+			<tr>
+				<td>Tanggal Pengajuan</td>
+				<td> : </td>
+				<td class="text-left"><?= date('d F Y', $data_surat_all[$ds]['tanggal']); ?></td>
+			</tr>
+
+			<tr>
+				<td>Fungsi Bangunan</td>
+				<td> : </td>
+				<td class="text-left"><?= $data_surat_all[$ds]['fungsi_bangunan']; ?></td>
+			</tr>
+
+			<tr>
+				<td>Alamat Kegiatan</td>
+				<td> : </td>
+				<td class="text-left"><?= $data_surat_all[$ds]['alamat_kegiatan']; ?></td>
+			</tr>
+
+			<tr>
+				<td>Kecamatan</td>
+				<td> : </td>
+				<td class="text-left"><?= $data_surat_all[$ds]['kecamatan']; ?></td>
+			</tr>
+
+			<tr>
+				<td>Kelurahan</td>
+				<td> : </td>
+				<td class="text-left"><?= $data_surat_all[$ds]['kelurahan']; ?></td>
+			</tr>
+
+			<tr>
+				<td>Latittude & Longitude</td>
+				<td> : </td>
+				<td class="text-left"><?= $data_surat_all[$ds]['latittude_longitude']; ?></td>
+			</tr>
+
+			<tr>
+				<td>Luas Tanah Dimohon</td>
+				<td> : </td>
+				<td class="text-left"><?= $data_surat_all[$ds]['luas_tanah_dimohon']; ?></td>
+			</tr>
+
+			<tr>
+				<td>Luas Tanah Sesuai Bukti</td>
+				<td> : </td>
+				<td class="text-left"><?= $data_surat_all[$ds]['luas_tanah_sesuai_bukti']; ?></td>
+			</tr>
+
+			<tr>
+				<td>Luas Bangunan</td>
+				<td> : </td>
+				<td class="text-left"><?= $data_surat_all[$ds]['luas_bangunan']; ?></td>
+			</tr>
+
+			<tr>
+				<td>Status Tanah</td>
+				<td> : </td>
+				<td class="text-left"><?= $data_surat_all[$ds]['status_tanah']; ?></td>
+			</tr>
+
+			<tr>
+				<td>Penggunaan Tanah Sekarang</td>
+				<td> : </td>
+				<td class="text-left"><?= $data_surat_all[$ds]['penggunaan_tanah_sekarang']; ?></td>
+			</tr>
+
+			<tr>
+				<td>Jumlah Lantai</td>
+				<td> : </td>
+				<td class="text-left"><?= $data_surat_all[$ds]['rencana_jumlah_lantai']; ?></td>
+			</tr>
+
+			<tr>
+				<td>Tinggi Bangunan</td>
+				<td> : </td>
+				<td class="text-left"><?= $data_surat_all[$ds]['rencana_tinggi_bangunan']; ?> m</td>
+			</tr>
+
+			<tr>
+				<td>Total Luas Lantai</td>
+				<td> : </td>
+				<td class="text-left"><?= $data_surat_all[$ds]['rencana_total_luas_lantai']; ?> m<sup>2</td>
+			</tr>
+			<?php endforeach; ?>
+		</tbody>
+	</table>
+
+	<div style="text-align:right">
+		<footer class="main-footer">
+			<br>
+			<br>
+			<br>
+			<br>
+			<?= date('d F Y')  ?>
+			<br>
+			Kabupaten Lampung Timur
+			<br>
+			<br>
+			<br>
+			<br>
+			<?php foreach ($data_surat as $ds => $data) : ?>
+				<?= $data_surat_all[$ds]['validator']; ?>
+			<?php endforeach; ?>
+		</footer>
+	</div>
+	</div>
 </body>
 
 </html>

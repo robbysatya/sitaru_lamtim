@@ -17,10 +17,11 @@ class surat_perizinan_nonberusaha extends CI_Controller
 		$this->load->model('kkpr_NonBerusaha_model');
 	}
 
-	public function index()
+	public function index($no_dokumen_nonberusaha = null)
 	{
 		$data['user'] = $this->db->get_where('tb_user', ['email' => $this->session->userdata('email')])->row_array();
 		$this->data['data_surat'] = $this->db->get_where('tb_user', ['email' => $this->session->userdata('email')])->result_array();
+		$this->data['data_surat_all'] = $this->kkpr_NonBerusaha_model->surat_perizinan_noberusaha();
 
 		// panggil library yang kita buat sebelumnya yang bernama pdfgenerator
 		$this->load->library('pdfgenerator');
