@@ -46,9 +46,9 @@ class Disetujui extends CI_Controller
 		$this->load->view('templates/admin_footer');
 	}
 
-	public function surat_perizinan()
+	public function surat_perizinan_berusaha($id = null)
 	{
-		$this->data['data_surat'] = $this->db->get_where('tb_kkpr_berusaha', ['status' => 'Disetujui'])->result_array();;
+		$this->data['data_surat'] = $this->db->get_where('tb_kkpr_berusaha', ['id' => $id])->result_array();;
 
 		// panggil library yang kita buat sebelumnya yang bernama pdfgenerator
 		$this->load->library('pdfgenerator');
@@ -64,7 +64,7 @@ class Disetujui extends CI_Controller
 		//orientasi paper potrait / landscape
 		$orientation = "portrait";
 
-		$html = $this->load->view('admin/surat_perizinan_pdf', $this->data, true);
+		$html = $this->load->view('admin/surat_perizinan_berusaha_pdf', $this->data, true);
 
 		// run dompdf
 		$this->pdfgenerator->generate($html, $file_pdf, $paper, $orientation);

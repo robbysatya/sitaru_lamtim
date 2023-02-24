@@ -59,7 +59,7 @@
 												<td><?= $user_name[$ks]['nama']; ?></td>
 												<td style="text-align: center;">
 													<a href=" <?= base_url('admin/kkpr_Berusaha/Disetujui/Detail/' . $data['id']); ?>" class="btn btn-primary row-sm-8"><i class=" fas fa-eye"></i> Detail</a><br><br>
-													<a href="<?= base_url('admin/kkpr_Berusaha/Disetujui/surat_perizinan/' . $data['id']); ?>" class="btn btn-success row-sm-8" target="_blank"><i class="fas fa-download"></i>Unduh</a>
+													<a href="<?= base_url('admin/kkpr_Berusaha/Disetujui/surat_perizinan_berusaha/' . $data['id']); ?>" class="btn btn-success row-sm-8" target="_blank"><i class="fas fa-download"></i> Unduh</a>
 												</td>
 											</tr>
 											<?php $no++; ?>

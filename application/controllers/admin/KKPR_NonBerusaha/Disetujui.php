@@ -42,7 +42,7 @@ class Disetujui extends CI_Controller
 		$this->load->view('templates/admin_footer');
 	}
 
-	public function surat_perizinan($id = null)
+	public function surat_perizinan_nonberusaha($id = null)
 	{
 		$this->data['data_surat'] = $this->db->get_where('tb_kkpr_nonberusaha', ['id' => $id])->result_array();;
 
@@ -60,7 +60,7 @@ class Disetujui extends CI_Controller
 		//orientasi paper potrait / landscape
 		$orientation = "portrait";
 
-		$html = $this->load->view('admin/surat_perizinan_pdf', $this->data, true);
+		$html = $this->load->view('admin/surat_perizinan_nonberusaha_pdf', $this->data, true);
 
 		// run dompdf
 		$this->pdfgenerator->generate($html, $file_pdf, $paper, $orientation);
