@@ -12,7 +12,7 @@ class BelumDisetujui extends CI_Controller
 			redirect('auth');
 		} else if ($this->session->userdata('role') == null) {
 			redirect('auth');
-		} else if ($this->session->userdata('role') != 'Admin') {
+		} else if ($this->session->userdata('role') != 'Admin' && $this->session->userdata('role') != 'Validator') {
 			redirect('auth');
 		}
 

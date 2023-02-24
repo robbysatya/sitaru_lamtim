@@ -91,6 +91,7 @@
                     <select class="custom-select" id="role" name="role" required>
                       <option selected value="<?= $user_recent['role']; ?>"><?= $user_recent['role']; ?></option>
                       <option value="Admin">Administrator</option>
+                      <option value="Validator">Validator</option>
                       <option value="Pemohon">Pemohon</option>
                     </select>
                   </div>

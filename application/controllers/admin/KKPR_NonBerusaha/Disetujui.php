@@ -11,7 +11,7 @@ class Disetujui extends CI_Controller
 			redirect('auth');
 		} else if ($this->session->userdata('role') == null) {
 			redirect('auth');
-		} else if ($this->session->userdata('role') != 'Admin') {
+		} else if ($this->session->userdata('role') != 'Admin' && $this->session->userdata('role') != 'Validator') {
 			redirect('auth');
 		}
 		$this->load->model('kkpr_NonBerusaha_model');
@@ -31,7 +31,7 @@ class Disetujui extends CI_Controller
 	}
 	public function detail($id = null)
 	{
-		$data['title'] = 'Detail Data KKPR Non Berusaha Belum Disetujui';
+		$data['title'] = 'Detail Data KKPR Non Berusaha Disetujui';
 		$data['kkpr_sudah'] = $this->db->get_where('tb_kkpr_nonberusaha', ['id' => $id])->result_array();
 		$data['user_name'] =   $this->db->get_where('tb_kkpr_nonberusaha', ['id' => $id])->result_array();
 		$data['user'] = $this->db->get_where('tb_user', ['email' => $this->session->userdata('email')])->row_array();

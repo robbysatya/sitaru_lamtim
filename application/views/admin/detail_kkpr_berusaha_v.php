@@ -71,7 +71,7 @@
                     </tr>
                     <tr>
                       <th>Validator</th>
-                      <td><?= $user_name[$ks]['nama']; ?></td>
+                      <td><?= $user_name[$ks]['validator']; ?></td>
                     </tr>
                     <tr>
                       <th>No Dokumen</th>

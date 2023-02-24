@@ -104,14 +104,6 @@
         </li>
         <li class="nav-header">Data Lain</li>
         <li class="nav-item">
-          <a href="<?= base_url('admin/Data_User') ?>" class="nav-link">
-            <i class="nav-icon fas fa-user-alt"></i>
-            <p>
-              Data User
-            </p>
-          </a>
-        </li>
-        <li class="nav-item">
           <a href="<?= base_url('auth/logout') ?>" class="nav-link">
             <i class="nav-icon fas fa-sign-out-alt"></i>
             <p>
@@ -119,13 +111,20 @@
             </p>
           </a>
         </li>
+        <?php if ($this->session->userdata('role') == 'Admin') : ?>
+        <li class="nav-item">
+          <a href="<?= base_url('admin/Data_User') ?>" class="nav-link">
+            <i class="nav-icon fas fa-user-alt"></i>
+            <p>
+              Data User
+            </p>
+          </a>
+        </li>
+        <?php endif; ?>
     </nav>
     <!-- /.sidebar-menu -->
   </div>
   <!-- /
 .sidebar
  -->
-
-
-
 </aside>

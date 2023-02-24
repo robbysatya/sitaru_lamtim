@@ -58,7 +58,7 @@
 												<td><?= $data['no_hp']; ?></td>
 												<td><?= date('d F Y', $data['tanggal']); ?></td>
 												<td><?= date('d F Y', $data['tgl_disetujui']); ?></td>
-												<td><?= $data['validator']; ?></td>
+												<td><?= $user_name[$ks]['validator']; ?></td>
 												<td style="text-align: center;">
 													<a href=" <?= base_url('admin/kkpr_NonBerusaha/Disetujui/Detail/' . $data['id']); ?>" class="btn btn-primary row-sm-8"><i class=" fas fa-eye"></i> Detail</a><br><br>
 													<a href="<?= base_url('admin/kkpr_NonBerusaha/Disetujui/surat_perizinan_nonberusaha/' . $data['id']); ?>" class="btn btn-success row-sm-8" target="_blank"><i class="fas fa-download"></i> Unduh</a>

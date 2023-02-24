@@ -11,7 +11,7 @@ class Disetujui extends CI_Controller
 			redirect('auth');
 		} else if ($this->session->userdata('role') == null) {
 			redirect('auth');
-		} else if ($this->session->userdata('role') != 'Admin') {
+		} else if ($this->session->userdata('role') != 'Admin' && $this->session->userdata('role') != 'Validator') {
 			redirect('auth');
 		}
 
@@ -22,7 +22,6 @@ class Disetujui extends CI_Controller
 	{
 		$data['title'] = 'Data KKPR Berusaha Disetujui';
 		$data['kkpr_sudah'] = $this->db->get_where('tb_kkpr_berusaha', ['status' => 'Disetujui'])->result_array();
-		$data['user_name'] = $this->db->get('tb_user')->result_array();
 		$data['user_name'] = $this->kkpr_Berusaha_model->validator();
 		$data['user'] = $this->db->get_where('tb_user', ['email' => $this->session->userdata('email')])->row_array();
 
@@ -36,7 +35,7 @@ class Disetujui extends CI_Controller
 	{
 		$data['title'] = 'Detail Data KKPR Berusaha Belum Disetujui';
 		$data['kkpr_sudah'] = $this->db->get_where('tb_kkpr_berusaha', ['id' => $id])->result_array();
-		$data['user_name'] = $this->kkpr_Berusaha_model->validator();
+		$data['user_name'] =   $this->db->get_where('tb_kkpr_berusaha', ['id' => $id])->result_array();
 		$data['user'] = $this->db->get_where('tb_user', ['email' => $this->session->userdata('email')])->row_array();
 
 
