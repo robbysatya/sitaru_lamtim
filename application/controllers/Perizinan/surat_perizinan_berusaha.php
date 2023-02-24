@@ -14,14 +14,14 @@ class surat_perizinan_berusaha extends CI_Controller
 			redirect('auth');
 		}
 		$this->load->library('form_validation');
-		$this->load->model('kkpr_NonBerusaha_model');
+		$this->load->model('kkpr_Berusaha_model');
 	}
 
 	public function index()
 	{
 		$data['user'] = $this->db->get_where('tb_user', ['email' => $this->session->userdata('email')])->row_array();
 		$this->data['data_surat'] = $this->db->get_where('tb_user', ['email' => $this->session->userdata('email')])->result_array();
-
+		$this->data['data_surat_all'] = $this->kkpr_Berusaha_model->surat_perizinan_berusaha();
 		// panggil library yang kita buat sebelumnya yang bernama pdfgenerator
 		$this->load->library('pdfgenerator');
 

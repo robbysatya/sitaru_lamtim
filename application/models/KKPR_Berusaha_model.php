@@ -251,4 +251,14 @@ class kkpr_Berusaha_model extends CI_Model
 
 		return $this->db->query($query)->result_array();
 	}
+
+	public function surat_perizinan_berusaha()
+	{
+		$this->db->select('*');
+		$this->db->from('tb_kkpr_berusaha');
+		$this->db->join('tb_user', 'tb_kkpr_berusaha.no_dokumen = tb_user.no_dokumen_berusaha');
+		$query = $this->db->get();
+
+		return $query->result_array();
+	}
 }

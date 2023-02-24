@@ -87,6 +87,29 @@
 				</tr>
 
 				<tr>
+					<td>NIB</td>
+					<td> : </td>
+					<td class="text-left"><?= $data['nib']; ?></td>
+				</tr>
+
+				<tr>
+					<td>KBLI</td>
+					<td> : </td>
+					<td class="text-left"><?= $data['kbli']; ?></td>
+				</tr>
+
+				<tr>
+					<td>Judul KBLI</td>
+					<td> : </td>
+					<td class="text-left"><?= $data['kbli_judul']; ?></td>
+				</tr>
+
+				<tr>
+					<td>Skala Usaha</td>
+					<td> : </td>
+					<td class="text-left"><?= $data['skala_usaha']; ?></td>
+				</tr>
+				<tr>
 					<td>Fungsi Bangunan</td>
 					<td> : </td>
 					<td class="text-left"><?= $data['fungsi_bangunan']; ?></td>

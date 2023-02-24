@@ -120,6 +120,7 @@
   	</section>
   </main><!-- End #main -->
 
-  <script type="text/javasxript">
+
+  <script>
   	$('#HomeModal').modal('show')
-	</script>
+  </script>

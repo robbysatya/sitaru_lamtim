@@ -30,6 +30,8 @@ class Auth_model extends CI_Model
 					$this->session->set_userdata($data);
 					if ($user['role'] == 'Admin') {
 						redirect('admin/dashboard');
+					} else if ($user['role'] == 'Validator') {
+						redirect('admin/dashboard');
 					} else if ($user['role'] == 'Pemohon') {
 						redirect('');
 					} else {
