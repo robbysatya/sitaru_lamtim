@@ -166,7 +166,25 @@
 		</tbody>
 	</table>
 
-
+	<div style="text-align:right">
+		<footer class="main-footer">
+			<br>
+			<br>
+			<br>
+			<br>
+			<?= date('d F Y')  ?>
+			<br>
+			Kabupaten Lampung Timur
+			<br>
+			<br>
+			<br>
+			<br>
+			<?php foreach ($data_surat as $data) : ?>
+				<?= $data['validator']; ?>
+			<?php endforeach; ?>
+		</footer>
+	</div>
+	</div>
 </body>
 
 </html>
