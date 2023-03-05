@@ -45,7 +45,7 @@
 											<th>Nama</th>
 											<th>Email</th>
 											<th>No HP</th>
-											<th>Pekerjaan</th>
+											<!-- <th>Pekerjaan</th> -->
 											<th>Role</th>
 											<th>Status Akun</th>
 											<th>Action</th>
@@ -59,13 +59,13 @@
 												<td><?= $user['nama']; ?></td>
 												<td><?= $user['email']; ?></td>
 												<td><?= $user['no_hp']; ?></td>
-												<td><?= $user['pekerjaan']; ?></td>
+												<!-- <td><?= $user['pekerjaan']; ?></td> -->
 												<td><?= $user['role']; ?></td>
 												<td><?php if ($user['is_active'] == 1) { ?>
 													<?= 'Aktif';
-														} else if ($user['is_active'] == 0) { ?>
+													} else if ($user['is_active'] == 0) { ?>
 													<?= 'Tidak Active';
-														} ?>
+													} ?>
 												</td>
 												<td>
 													<a href="<?= base_url('admin/data_user/edit_user/' . $user['id']) ?>" class="btn btn-warning row-sm-8" style="color: #fff;"><i class="fas fa-fw fa-edit"></i>
