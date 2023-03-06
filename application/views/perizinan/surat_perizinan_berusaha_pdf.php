@@ -202,10 +202,9 @@
 			<br>
 			<br>
 			<br>
+			a.n Kepala Dinas PUPR
 			<br>
-			<?php foreach ($data_surat as $ds => $data) : ?>
-				<?= $data_surat_all[$ds]['validator']; ?>
-			<?php endforeach; ?>
+			Kab. Lampung Timur
 		</footer>
 	</div>
 

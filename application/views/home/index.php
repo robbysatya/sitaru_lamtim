@@ -1,13 +1,4 @@
   <!-- ======= Hero Section ======= -->
-
-  <div class="modal fade bd-example-modal-lg" id="HomeModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  	<div class="modal-dialog modal-lg">
-  		<div class="modal-content">
-  			...
-  		</div>
-  	</div>
-  </div>
-
   <section id="hero" class="d-flex align-items-center">
   	<div class="container" data-aos="zoom-out" data-aos-delay="100">
   		<h1>Selamat Datang di <span>Sitaru Lampung Timur</span></h1>
@@ -101,6 +92,7 @@
   				</div>
   			</div>
 
+
   		</div>
   	</section><!-- End Services Section -->
 
@@ -119,8 +111,3 @@
   		</div>
   	</section>
   </main><!-- End #main -->
-
-
-  <script>
-  	$('#HomeModal').modal('show')
-  </script>
