@@ -12,8 +12,8 @@
 					<li><a class="nav-link scrollto" href="<?= base_url('') ?>">Beranda</a></li>
 					<li class="dropdown nav-link scrollto"><a>Layanan<i class="bi bi-chevron-down"></i></a>
 						<ul>
-							<li><a class="nav-link scrollto" href="<?= base_url('perizinan/KPPR_Berusaha') ?>">KKPR Berusaha</a></li>
-							<li><a class="nav-link scrollto" href="<?= base_url('perizinan/KPPR_NonBerusaha') ?>">KKPR Non
+							<li><a class="nav-link scrollto" href="<?= base_url('perizinan/KKPR_Berusaha') ?>">KKPR Berusaha</a></li>
+							<li><a class="nav-link scrollto" href="<?= base_url('perizinan/KKPR_NonBerusaha') ?>">KKPR Non
 									Berusaha</a></li>
 						</ul>
 					</li>

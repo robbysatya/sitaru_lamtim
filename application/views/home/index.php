@@ -91,6 +91,19 @@
   					</div>
   				</div>
   			</div>
+		</div>
+  	</section>
+	
+	<section id="services" class="services">
+  		<div class="container" data-aos="fade-up">
+  			<div class="section-title">
+  				<h3><span>Alur Pengajuan KKPR</span></h3>
+  				<p>Dibawah adalah alur untuk pengajuan KKPR Berusaha dan KKPR Non Berusaha.</p>
+  			</div>
+
+  			<div class="row">
+  				<img src="<?= base_url('assets/') ?>img/Step.png" alt="" srcset="">
+  			</div>
 
 
   		</div>
